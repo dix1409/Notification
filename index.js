@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/api/data", async (req, res, next) => {
+app.post("/api/data", async (req, res, next) => {
 //   console.log(req.body);
   const Message = req.body;
   console.log(Message);
